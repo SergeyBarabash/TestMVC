@@ -1,0 +1,9 @@
+<list xmlns = 'http://www.w3.org/2001/XMLSchema'>
+<?php
+        foreach ($items as $item) {
+        echo "\t<item>\n";
+        echo "\t\t<name>" . $item['name'] . "</name>\n\t\t<price>" . $item['price'] . "</price>\n";
+        echo "\t</item>\n\n";
+        }
+?>
+</list>

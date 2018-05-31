@@ -1,0 +1,13 @@
+<p>Каталог товаров и услуг:
+	<?php
+	echo '<table border="1">';
+	/** @noinspection PhpUndefinedVariableInspection */
+	foreach ($items as $item) {
+		echo '<tr>';
+		/** @noinspection PhpUndefinedMethodInspection */
+		echo '<td>' . $item->getName() . '</td><td>' . $item->getPrice() . '</td>';
+		echo '</tr>';
+	}
+	echo '<table>';
+	?>
+</p>
